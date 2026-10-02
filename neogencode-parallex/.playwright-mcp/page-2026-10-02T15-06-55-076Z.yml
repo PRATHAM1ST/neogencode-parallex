@@ -1,0 +1,236 @@
+- generic [active] [ref=e1]:
+  - link "Skip to projects" [ref=e2] [cursor=pointer]:
+    - /url: "#work"
+  - banner [ref=e3]:
+    - link "Pratham Chudasama, back to top" [ref=e4] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=e5]: p.
+      - generic [ref=e6]:
+        - text: Pratham Chudasama
+        - generic [ref=e7]: Developer & creative thinker
+    - navigation "Main navigation" [ref=e8]:
+      - link "Work" [ref=e9] [cursor=pointer]:
+        - /url: "#work"
+      - link "The experiment" [ref=e10] [cursor=pointer]:
+        - /url: "#experiment"
+      - link "About" [ref=e11] [cursor=pointer]:
+        - /url: "#about"
+    - link "My portfolio" [ref=e12] [cursor=pointer]:
+      - /url: https://www.prathamchudasama.com
+      - text: My portfolio
+      - generic [aria-hidden] [ref=e13]: ↗
+  - main [ref=e14]:
+    - region [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]: A developer’s perspective
+        - generic [ref=e19]: Web · 3D · SaaS
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: A little curiosity. A little code.
+        - heading "A different perspective." [level=1] [ref=e22]: A differentperspective.
+        - paragraph [ref=e23]: I’m Pratham. I build websites and digital experiences that look good, feel right, and do more.
+        - link "Explore my work" [ref=e24] [cursor=pointer]:
+          - /url: "#work"
+          - text: Explore my work
+          - generic [aria-hidden] [ref=e25]: ↘
+      - generic [ref=e26]:
+        - link "Scroll. There’s more to the story." [ref=e27] [cursor=pointer]:
+          - /url: "#work"
+          - generic [aria-hidden] [ref=e28]: ↓
+          - text: Scroll. There’s more to the story.
+        - generic [ref=e29]:
+          - generic [aria-hidden] [ref=e30]: </>
+          - text: Just HTML & CSS
+    - generic [ref=e31]:
+      - paragraph [ref=e32]: Thoughtful design. Solid development. A touch of the unexpected.
+      - link "See the parallax experiment" [ref=e33] [cursor=pointer]:
+        - /url: "#experiment"
+        - text: See the parallax experiment ↗
+    - region [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - paragraph [ref=e37]: Selected work
+          - heading "Built with purpose. Made to stand out." [level=2] [ref=e38]: Built with purpose.Made to stand out.
+        - paragraph [ref=e39]: A selection of websites, immersive 3D experiences, and useful products I’ve worked on.Different challenges. The same attention to detail.
+      - generic [ref=e40]:
+        - link "SP Plast — Plastic. Made possible. Again. SP Plast Industries Website / 3D" [ref=e41] [cursor=pointer]:
+          - /url: https://spplastindustries.com
+          - generic [ref=e42]:
+            - img "SP Plast — Plastic. Made possible. Again." [ref=e43]
+            - generic [aria-hidden] [ref=e44]: ↗
+          - generic [ref=e45]:
+            - heading "SP Plast Industries" [level=3] [ref=e46]
+            - generic [ref=e47]: Website / 3D
+        - link "Mamta Design Co. — Navratri wardrobe and couture Mamta Design Co. Website" [ref=e48] [cursor=pointer]:
+          - /url: https://mamtadesignco.com
+          - generic [ref=e49]:
+            - img "Mamta Design Co. — Navratri wardrobe and couture" [ref=e50]
+            - generic [aria-hidden] [ref=e51]: ↗
+          - generic [ref=e52]:
+            - heading "Mamta Design Co." [level=3] [ref=e53]
+            - generic [ref=e54]: Website
+        - link "Another dimension of digital. agproject AG Project Website / 3D / SaaS" [ref=e55] [cursor=pointer]:
+          - /url: https://agproject.io/
+          - generic [ref=e56]:
+            - generic [ref=e57]: Another dimension of digital.
+            - generic [ref=e63]:
+              - text: agproject
+              - generic [aria-hidden] [ref=e64]: ✳
+            - generic [aria-hidden] [ref=e65]: ↗
+          - generic [ref=e66]:
+            - heading "AG Project" [level=3] [ref=e67]
+            - generic [ref=e68]: Website / 3D / SaaS
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - heading "The full collection 13 projects" [level=3] [ref=e71]:
+            - text: The full collection
+            - generic [ref=e72]: 13 projects
+          - paragraph [ref=e73]: Go on, have a look around.
+        - generic [ref=e74]:
+          - radio "All work 13" [checked] [ref=e75]
+          - generic [ref=e76] [cursor=pointer]:
+            - text: All work
+            - generic [ref=e77]: "13"
+          - radio "Websites 9" [ref=e78]
+          - generic [ref=e79] [cursor=pointer]:
+            - text: Websites
+            - generic [ref=e80]: "9"
+          - radio "3D experiences 4" [ref=e81]
+          - generic [ref=e82] [cursor=pointer]:
+            - text: 3D experiences
+            - generic [ref=e83]: "4"
+          - radio "SaaS products 4" [ref=e84]
+          - generic [ref=e85] [cursor=pointer]:
+            - text: SaaS products
+            - generic [ref=e86]: "4"
+          - generic [ref=e87]:
+            - link "SP Plast Industries spplastindustries.com" [ref=e88] [cursor=pointer]:
+              - /url: https://spplastindustries.com
+              - generic [aria-hidden] [ref=e89]: sp.
+              - generic [ref=e90]:
+                - strong [ref=e91]: SP Plast Industries
+                - generic [ref=e92]: spplastindustries.com
+              - generic [aria-hidden] [ref=e93]: ↗
+            - link "Mamta Design Co. mamtadesignco.com" [ref=e94] [cursor=pointer]:
+              - /url: https://mamtadesignco.com
+              - generic [aria-hidden] [ref=e95]: m.
+              - generic [ref=e96]:
+                - strong [ref=e97]: Mamta Design Co.
+                - generic [ref=e98]: mamtadesignco.com
+              - generic [aria-hidden] [ref=e99]: ↗
+            - link "Studio Rei studiorei.art" [ref=e100] [cursor=pointer]:
+              - /url: https://studiorei.art
+              - generic [aria-hidden] [ref=e101]: rei
+              - generic [ref=e102]:
+                - strong [ref=e103]: Studio Rei
+                - generic [ref=e104]: studiorei.art
+              - generic [aria-hidden] [ref=e105]: ↗
+            - link "Magnus Hathaway magnushathaway.com" [ref=e106] [cursor=pointer]:
+              - /url: https://www.magnushathaway.com/
+              - generic [aria-hidden] [ref=e107]: mh
+              - generic [ref=e108]:
+                - strong [ref=e109]: Magnus Hathaway
+                - generic [ref=e110]: magnushathaway.com
+              - generic [aria-hidden] [ref=e111]: ↗
+            - link "AG Project agproject.io" [ref=e112] [cursor=pointer]:
+              - /url: https://agproject.io/
+              - generic [aria-hidden] [ref=e113]: ag
+              - generic [ref=e114]:
+                - strong [ref=e115]: AG Project
+                - generic [ref=e116]: agproject.io
+              - generic [aria-hidden] [ref=e117]: ↗
+            - link "Asambhav asambhav.in" [ref=e118] [cursor=pointer]:
+              - /url: https://asambhav.in
+              - generic [aria-hidden] [ref=e119]: as
+              - generic [ref=e120]:
+                - strong [ref=e121]: Asambhav
+                - generic [ref=e122]: asambhav.in
+              - generic [aria-hidden] [ref=e123]: ↗
+            - link "Chain Labs chainlabs.in" [ref=e124] [cursor=pointer]:
+              - /url: https://chainlabs.in
+              - generic [aria-hidden] [ref=e125]: cl
+              - generic [ref=e126]:
+                - strong [ref=e127]: Chain Labs
+                - generic [ref=e128]: chainlabs.in
+              - generic [aria-hidden] [ref=e129]: ↗
+            - link "Heads Up playheadsup.xyz/game" [ref=e130] [cursor=pointer]:
+              - /url: https://www.playheadsup.xyz/game
+              - generic [aria-hidden] [ref=e131]: hu
+              - generic [ref=e132]:
+                - strong [ref=e133]: Heads Up
+                - generic [ref=e134]: playheadsup.xyz/game
+              - generic [aria-hidden] [ref=e135]: ↗
+            - link "WITS Academy wits.academy" [ref=e136] [cursor=pointer]:
+              - /url: https://www.wits.academy/
+              - generic [aria-hidden] [ref=e137]: w.
+              - generic [ref=e138]:
+                - strong [ref=e139]: WITS Academy
+                - generic [ref=e140]: wits.academy
+              - generic [aria-hidden] [ref=e141]: ↗
+            - link "My personal portfolio prathamchudasama.com" [ref=e142] [cursor=pointer]:
+              - /url: https://www.prathamchudasama.com
+              - generic [aria-hidden] [ref=e143]: p.
+              - generic [ref=e144]:
+                - strong [ref=e145]: My personal portfolio
+                - generic [ref=e146]: prathamchudasama.com
+              - generic [aria-hidden] [ref=e147]: ↗
+            - link "Dycot dycot.chainlabs.in" [ref=e148] [cursor=pointer]:
+              - /url: https://dycot.chainlabs.in
+              - generic [aria-hidden] [ref=e149]: dy
+              - generic [ref=e150]:
+                - strong [ref=e151]: Dycot
+                - generic [ref=e152]: dycot.chainlabs.in
+              - generic [aria-hidden] [ref=e153]: ↗
+            - link "SitesGPT app.sitesgpt.in" [ref=e154] [cursor=pointer]:
+              - /url: https://app.sitesgpt.in
+              - generic [aria-hidden] [ref=e155]: sg
+              - generic [ref=e156]:
+                - strong [ref=e157]: SitesGPT
+                - generic [ref=e158]: app.sitesgpt.in
+              - generic [aria-hidden] [ref=e159]: ↗
+            - link "Gym CRM tutorials-gym-crm.vercel.app" [ref=e160] [cursor=pointer]:
+              - /url: https://tutorials-gym-crm.vercel.app
+              - generic [aria-hidden] [ref=e161]: gym
+              - generic [ref=e162]:
+                - strong [ref=e163]: Gym CRM
+                - generic [ref=e164]: tutorials-gym-crm.vercel.app
+              - generic [aria-hidden] [ref=e165]: ↗
+        - paragraph [ref=e166]: Each project opens in a new tab. Explore at your own pace.
+    - region [ref=e167]:
+      - generic [ref=e168]:
+        - generic [ref=e169]:
+          - generic [aria-hidden] [ref=e170]: ◈
+          - text: The parallax experiment
+        - generic [ref=e171]: One image. A little perspective.
+      - generic [ref=e172]:
+        - heading "Keep scrolling. Feel the difference." [level=2] [ref=e173]: Keep scrolling.Feel the difference.
+        - paragraph [ref=e174]: The landscape stays. The story moves.A simple shift that adds a whole new dimension.
+      - generic [ref=e175]: Small details. Lasting impressions.
+    - region [ref=e176]:
+      - generic [ref=e177]:
+        - paragraph [ref=e178]: The person behind the pixels
+        - heading "Hi, I’m Pratham." [level=2] [ref=e179]:
+          - text: Hi, I’m Pratham.
+          - generic [aria-hidden] [ref=e180]: ✳
+        - paragraph [ref=e181]: I bring ideas to life on the web. From a business’s first impression to a 3D experience or a product people use every day, I care about how it looks and how it works.
+        - link "Get to know me" [ref=e182] [cursor=pointer]:
+          - /url: https://www.prathamchudasama.com
+          - text: Get to know me
+          - generic [aria-hidden] [ref=e183]: ↗
+      - generic [ref=e184]:
+        - generic [aria-hidden] [ref=e185]: </>
+        - heading "A little code. A lot of perspective." [level=3] [ref=e186]: A little code.A lot of perspective.
+        - paragraph [ref=e187]: This page is a small experiment in doing more with less. Just an image, HTML, and a few lines of CSS for the effect.
+        - group [ref=e188]:
+          - generic "Peek behind the scroll" [ref=e189] [cursor=pointer]:
+            - text: Peek behind the scroll
+            - generic [aria-hidden] [ref=e190]: +
+  - contentinfo [ref=e191]:
+    - link "p. Pratham Chudasama" [ref=e192] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=e193]: p.
+      - text: Pratham Chudasama
+    - paragraph [ref=e194]: Made with curiosity. Built with care.
+    - link "Back to top" [ref=e195] [cursor=pointer]:
+      - /url: "#top"
+      - text: Back to top
+      - generic [aria-hidden] [ref=e196]: ↑

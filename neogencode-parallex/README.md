@@ -8,16 +8,25 @@ The effect lives in `.parallax` in `styles.css`:
 
 ```css
 .parallax {
-  background-image: url("assets/mountains.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  position: relative;
+  isolation: isolate;
+  clip-path: inset(0);
+}
+.parallax::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url("assets/mountains.jpg") center / cover;
+}
+@media (prefers-reduced-motion: reduce) {
+  .parallax::before { position: absolute; }
 }
 ```
 
-`background-attachment: fixed` anchors the background to the viewport. The page content moves while the image stays still, creating the illusion of depth. `cover` fills the section without distorting the image. The actual page layers a subtle dark gradient over the photo to keep the text readable.
+The `::before` pseudo-element provides an image layer anchored to the viewport with `position: fixed`. `clip-path: inset(0)` limits that layer to the section’s visible area, and `isolation: isolate` keeps it behind the section’s content. As the section scrolls, it reveals different parts of the stationary image, creating depth. `cover` fills the layer without distorting the image. The actual page adds a dark gradient for readable text.
 
-Touch devices use `background-attachment: scroll` because mobile browsers handle fixed backgrounds inconsistently. The same fallback respects `prefers-reduced-motion`. The page is fully usable in either mode.
+This works on desktop and touch devices without relying on mobile support for `background-attachment: fixed`. When reduced motion is preferred, the layer switches to `position: absolute` and moves with its section, removing the parallax effect.
 
 ## Included
 
@@ -28,7 +37,7 @@ Touch devices use `background-attachment: scroll` because mobile browsers handle
 - Mobile layout, skip link, visible keyboard focus, and reduced motion support.
 - Each external project opens in a new tab.
 
-SP Plast and Mamta Design Co. use their sites’ actual social preview images. AG Project has an original CSS graphic cover, not a website screenshot. Image sources are documented in `assets/SOURCES.md`. Google Fonts is optional; system fonts are used if it is unavailable. All photographs and preview images are saved locally so the page works offline.
+SP Plast and Mamta Design Co. use their sites’ actual social preview images. Pratham’s portfolio has an original CSS graphic cover, not a website screenshot. Image sources are documented in `assets/SOURCES.md`. Google Fonts is optional; system fonts are used if it is unavailable. All photographs and preview images are saved locally so the page works offline.
 
 ## Files
 

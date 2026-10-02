@@ -45,9 +45,9 @@
           <div class="project-art art-mamta"><img src="assets/work-mamta.jpg" alt="Mamta Design Co. — Navratri wardrobe and couture" width="1200" height="628" loading="lazy"><span class="project-open" aria-hidden="true">↗</span></div>
           <div class="featured-meta"><h3>Mamta Design Co.</h3><span>Website</span></div>
         </a>
-        <a class="featured-card" href="https://agproject.io/" target="_blank" rel="noopener noreferrer">
-          <div class="project-art art-ag"><span class="project-art-label">Another dimension of digital.</span><div class="orbit-art" aria-hidden="true"><i></i><i></i><i></i><span></span></div><span class="ag-wordmark">ag<span>project</span><b aria-hidden="true">✳</b></span><span class="project-open" aria-hidden="true">↗</span></div>
-          <div class="featured-meta"><h3>AG Project</h3><span>Website / 3D / SaaS</span></div>
+        <a class="featured-card" href="https://www.prathamchudasama.com" target="_blank" rel="noopener noreferrer">
+          <div class="project-art art-portfolio"><span class="project-art-label">My corner of the internet.</span><div class="orbit-art" aria-hidden="true"><i></i><i></i><i></i><span></span></div><span class="portfolio-wordmark">p.<span>portfolio</span><b aria-hidden="true">✳</b></span><span class="project-open" aria-hidden="true">↗</span></div>
+          <div class="featured-meta"><h3>Pratham Chudasama</h3><span>Website / 3D</span></div>
         </a>
       </div>
 
@@ -87,11 +87,20 @@
     <section class="about-section section-wrap" id="about" aria-labelledby="about-title">
       <div class="about-copy"><p class="section-kicker">The person behind the pixels</p><h2 id="about-title">Hi, I’m Pratham.<span class="wave" aria-hidden="true">✳</span></h2><p>I bring ideas to life on the web. From a business’s first impression to a 3D experience or a product people use every day, I care about how it looks and how it works.</p><a class="button button-blue" href="https://www.prathamchudasama.com" target="_blank" rel="noopener noreferrer">Get to know me <span aria-hidden="true">↗</span></a></div>
       <div class="build-note"><span class="code-symbol" aria-hidden="true">&lt;/&gt;</span><h3>A little code.<br>A lot of perspective.</h3><p>This page is a small experiment in doing more with less. Just an image, HTML, and a few lines of CSS for the effect.</p><details><summary>Peek behind the scroll <span aria-hidden="true">+</span></summary><pre><code>.parallax {
-  background-image: url("assets/mountains.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}</code></pre><p>The background stays fixed to the viewport as the content scrolls over it. On touch devices and when reduced motion is preferred, it becomes a regular background.</p></details></div>
+  position: relative;
+  isolation: isolate;
+  clip-path: inset(0);
+}
+.parallax::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url("assets/mountains.jpg") center / cover;
+}
+@media (prefers-reduced-motion: reduce) {
+  .parallax::before { position: absolute; }
+}</code></pre><p>A fixed image layer stays behind the content, clipped to its section as you scroll. It works on desktop and touch devices using only HTML and CSS. With reduced motion enabled, the layer moves with the section instead.</p></details></div>
     </section>
   </main>
 
